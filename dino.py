@@ -26,7 +26,7 @@ class Dino:
         if self.is_jumping:
             if self.vel >= -self.JUMP_N:
                 self.y -= (self.vel * abs(self.vel)) * 0.5
-                self.vel -= 1.5
+                self.vel -= 12.0
             else:
                 self.vel = 0
                 self.is_jumping = False
